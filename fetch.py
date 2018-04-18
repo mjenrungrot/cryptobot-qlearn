@@ -2,8 +2,9 @@ import requests
 import datetime
 import pandas as pd
 import io
+import os
 
-key = "5D529B2D-63DA-48DD-ADE6-197F4EC47FFA"
+key = os.environ["CRYPTO_KEY"]
 
 headers = {'X-CoinAPI-Key': key}
 
