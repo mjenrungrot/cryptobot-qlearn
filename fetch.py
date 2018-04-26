@@ -22,4 +22,5 @@ response = requests.get(base + sym + "/history/", headers=headers,
                                "output_format": "csv"})
 
 df = pd.read_csv(io.StringIO(response.text), sep=";")
+df.to_csv("{:}-{:}.csv".format(sym,today))
 print(df.head())
