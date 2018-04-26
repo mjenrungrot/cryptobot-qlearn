@@ -14,7 +14,7 @@ sym = "BITSTAMP_SPOT_BTC_USD"
 
 today = datetime.date.today()
 
-week_ago = today - datetime.timedelta(days=7)
+week_ago = today - datetime.timedelta(days=21)
 
 response = requests.get(base + sym + "/history/", headers=headers,
                        params={"period_id": "4HRS",
