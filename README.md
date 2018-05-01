@@ -1,6 +1,9 @@
-# Q-Learning on Bitcoin
+# Q-Learning on Bitcoin 
 ### By: Fabio Amendola, Teerapat (Mek) Jenrungrot, Yi Sheng Ong
+Links: https://github.com/mjenrungrot/cryptobot-qlearn
 
+## Introduction
+Reinforcement learning is an area of machine learning concerened with how software agents should take actions in an environment to maximize the concept of rewards. With the recent achievements in deep neural network concept, people have successfully applied reinforcement learning with deep neural network to solve more complicated problems. In this project, we aim to study the application of reinforcement learning on the aspect of cryptocurrency investor. The software agent is tasked to maximize the profit given that the agent can see historical prices.
 
 ## What is Deep Q Network (DQN)?
 
@@ -10,7 +13,7 @@ Assume we've learned our function Q, we'd for the current state s, we'd want to 
 
 ## What we did.
 
-We used Keras and an agent as a basic Q learner. Then we trained it on historical Bitcoin end of day price data and evaluated how well the Q learner did on a seperate, hold out dataset.
+We used Keras to implement a basic Q learning agent with 3 fully connected layers (64, 32, and 8 hidden units respectively). Then we trained the agent to maximize the profit on 10-year daily historical value of S&P 500 index (^GSPC). The trained model is then used to to evaluate on historical daily Bitcoin price on a separate, hold out dataset.
 
 ## Results.
 ![profit](./BITSTAMP_SPOT_BTC_USD-2017-01-01_profit.png)
