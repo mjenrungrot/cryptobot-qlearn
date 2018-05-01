@@ -8,6 +8,14 @@ Assume we've learned our function Q, we'd for the current state s, we'd want to 
 
 ## What we did.
 
-We used Keras and an agent as a basic Q learner. Then we trained it on historical Bitcoin price data and evaluated how well the Q learner did on a seperate, hold out dataset.
+We used Keras and an agent as a basic Q learner. Then we trained it on historical Bitcoin end of day price data and evaluated how well the Q learner did on a seperate, hold out dataset.
 
 ## Results.
+![profit](./BITSTAMP_SPOT_BTC_USD-2017-01-01_profit.png)
+![result](./BITSTAMP_SPOT_BTC_USD-2017-01-01_results.png)
+
+We ran the model on 252 end of day bitcoin prices starting from January 01, 2017.
+
+## Future work.
+
+We could consider more minute time scales for prices, like minute to minute or hour to hour. More minute time scales might be useful because of how volatile bitcoin prices are.
