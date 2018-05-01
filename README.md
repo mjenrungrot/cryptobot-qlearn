@@ -18,4 +18,4 @@ We ran the model on 252 end of day bitcoin prices starting from January 01, 2017
 
 ## Future work.
 
-We could consider more minute time scales for prices, like minute to minute or hour to hour. More minute time scales might be useful because of how volatile bitcoin prices are.
+We could consider smaller time intervals for prices, like minute to minute or hour to hour. Smaller intervals might be useful because of how volatile bitcoin prices are.
