@@ -12,15 +12,17 @@ base = "https://rest.coinapi.io/v1/ohlcv/"
 
 sym = "BITSTAMP_SPOT_BTC_USD"
 
-today = datetime.date.today()
+start = datetime.date(2017, 1, 1)
 
-week_ago = today - datetime.timedelta(days=7)
+end = start + datetime.timedelta(days=252)
 
 response = requests.get(base + sym + "/history/", headers=headers,
-                       params={"period_id": "4HRS",
-                               "time_start": week_ago.isoformat(),
-                               "output_format": "csv"})
+                       params={"period_id": "1DAY",
+                               "time_start": start.isoformat(),
+                               "time_end": end.isoformat(),
+                               "output_format": "csv",
+                               "limit": 500})
 
 df = pd.read_csv(io.StringIO(response.text), sep=";")
-df.to_csv("{:}-{:}.csv".format(sym,today))
+df.to_csv("{:}-{:}.csv".format(sym,start))
 print(df.head())
