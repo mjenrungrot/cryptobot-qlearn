@@ -1,4 +1,6 @@
-# Cryptobot-qlearn
+# Q-Learning on Bitcoin
+### By: Fabio Amendola, Teerapat (Mek) Jenrungrot, Yi Sheng Ong
+
 
 ## What is Deep Q Network (DQN)?
 
