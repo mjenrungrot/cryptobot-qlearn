@@ -3,7 +3,7 @@
 Links: https://github.com/mjenrungrot/cryptobot-qlearn
 
 ## Introduction
-Reinforcement learning is an area of machine learning concerened with how software agents should take actions in an environment to maximize the concept of rewards. With the recent achievements in deep neural network concept, people have successfully applied reinforcement learning with deep neural network to solve more complicated problems. In this project, we aim to study the application of reinforcement learning on the aspect of cryptocurrency investor. The software agent is tasked to maximize the profit given that the agent can see historical prices.
+Reinforcement learning is an area of machine learning concerened with how software agents should take actions in an environment to maximize the concept of rewards. With the recent achievements in deep neural network concept, people have successfully applied reinforcement learning with deep neural network to solve more complicated problems. In this project, we aim to study the application of reinforcement learning on the aspect of cryptocurrency investor, where the software agent is tasked to maximize the profit given that the agent can see historical prices.
 
 ## What is Deep Q Network (DQN)?
 
